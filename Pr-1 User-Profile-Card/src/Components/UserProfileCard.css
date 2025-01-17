@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://source.unsplash.com/1600x900/?neutral,abstract") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    filter: brightness(80%);
+  }
+  
+  .detailed-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 700px;
+    height: auto; 
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.301);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .detailed-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .detailed-card-image {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 5px solid rgba(229, 231, 235, 0.8);
+    background-color: rgba(243, 244, 246, 0.7);
+  }
+  
+  .detailed-card-content {
+    width: 60%;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #1f2937;
+  }
+  
+  .detailed-card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: rgba(29, 78, 216, 0.9);
+  }
+  
+  .detailed-card-email {
+    font-size: 1rem;
+    color: rgba(107, 114, 128, 0.9);
+    margin: 5px 0;
+    overflow-wrap: break-word;
+  }
+  
+  .detailed-card-bio {
+    font-size: 0.95rem;
+    color: rgba(55, 65, 81, 0.9);
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .detailed-card-info p {
+    font-size: 0.9rem;
+    color: rgba(75, 85, 99, 0.9);
+    margin: 5px 0;
+    overflow-wrap: break-word;
+  }
+  
+  .detailed-card-info strong {
+    font-weight: bold;
+    color: rgba(17, 24, 39, 0.9);
+  }
+  
+  .detailed-card-info a {
+    color: rgba(37, 99, 235, 0.9);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .detailed-card-info a:hover {
+    color: rgba(29, 78, 216, 1);
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .detailed-card {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .detailed-card-image {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .detailed-card-content {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
