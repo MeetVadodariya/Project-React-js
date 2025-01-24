@@ -1,0 +1,96 @@
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/27/12/28/blur-2178381_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 350px;
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    color: white;
+    font-size: 3.2rem;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid white;
+    height: 70px;
+}
+
+.outside-display {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    height: 70px;
+    width: 70px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.ac-btn,
+.del-btn,
+.percent-btn {
+    background-color: gray;
+}
+
+.operator-btn {
+    background-color: orange;
+}
+
+.num-btn {
+    background-color: #333;
+}
+
+button#zero {
+    grid-column: span 2;
+    width: 100%;
+    height: 70px;
+    border-radius: 35px;
+}
