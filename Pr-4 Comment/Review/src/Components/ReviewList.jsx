@@ -1,5 +1,5 @@
 import React from "react";
-import './ReviewListStyles.css';  // Custom styles for review list
+import './ReviewListStyles.css';
 
 const ReviewList = ({ reviews }) => {
   return (

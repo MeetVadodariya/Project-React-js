@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './ReviewFormStyles.css';  // Custom form styles
+import './ReviewFormStyles.css'; 
 
 const ReviewForm = ({ addReview }) => {
   const [form, setForm] = useState({ username: "", review: "", rating: 0 });
@@ -35,7 +35,7 @@ const ReviewForm = ({ addReview }) => {
 
   return (
     <div className="review-form-container">
-      <h2 className="form-heading">Leave Your Review</h2> {/* Added heading here */}
+      <h2 className="form-heading">Leave Your Review</h2> 
       <form onSubmit={handleSubmit} className="review-form">
         <div className="form-group">
           <label>Username:</label>

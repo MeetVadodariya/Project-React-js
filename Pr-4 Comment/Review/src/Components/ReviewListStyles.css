@@ -1,78 +1,69 @@
-/* Styling for the review list */
 .review-list {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Increased gap for better spacing between cards */
+    gap: 30px;
     margin-top: 30px;
     padding: 20px;
     width: 100%;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left; /* Align all content to the left */
+    text-align: left;
 }
 
-/* Styling for individual review cards */
 .review-card {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft shadow */
-    border-left: 5px solid #6c757d; /* Grey left border for a more neutral look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #6c757d;
     width: 100%;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left; /* Align text and content inside the card to the left */
+    text-align: left;
 }
 
-/* Hover effect on review card */
 .review-card:hover {
-    transform: scale(1.03); /* Slight zoom effect on hover */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* Review card username styling */
 .review-username {
-    font-weight: 600; /* Medium weight for better visibility */
+    font-weight: 600;
     font-size: 22px;
-    color: #495057; /* Darker gray for username */
-    margin-bottom: 10px; /* Increased spacing */
+    color: #495057;
+    margin-bottom: 10px;
 }
 
-/* Star rating styling */
 .star-rating {
-    color: #ffd700; /* Soft gold color for stars */
+    color: #ffd700;
     font-size: 26px;
     margin-top: 5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect for stars */
 .star-rating:hover {
-    color: #ffcc00; /* Slightly lighter yellow when hovered */
+    color: #ffcc00;
     transform: scale(1.1);
 }
 
-/* Review content paragraph styling */
 .review-card p {
-    color: #6c757d; /* Soft grey for review content */
+    color: #6c757d;
     font-size: 17px;
     margin-top: 15px;
     line-height: 1.6;
-    font-style: italic; /* Adds a light italic style */
+    font-style: italic;
 }
 
-/* Styling for the review card date */
 .review-card .review-date {
     font-size: 14px;
-    color: #adb5bd; /* Lighter gray for the date */
+    color: #adb5bd;
     margin-top: 10px;
     font-style: italic;
 }
 
-/* Optional: Add a button style for "See More" or "View Full Review" */
 .view-full-review-btn {
-    background-color: #28a745; /* Green button */
+    background-color: #28a745;
     color: white;
     padding: 12px 20px;
     border-radius: 8px;
@@ -83,8 +74,7 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect on "See More" button */
 .view-full-review-btn:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838;
     transform: scale(1.05);
 }
