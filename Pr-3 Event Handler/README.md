@@ -1,8 +1,3 @@
-# React + Vite
+Calculator Design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Image Alt](https://github.com/MeetVadodariya/Project-React-js/blob/bfdf8c03d56c0a62df87dabfb185f18b5e1c3949/Pr-3%20Event%20Handler/Screenshots/Event-ui.png)
