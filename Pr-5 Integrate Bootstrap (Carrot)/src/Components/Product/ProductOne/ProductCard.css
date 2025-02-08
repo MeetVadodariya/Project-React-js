@@ -1,0 +1,116 @@
+.product-container {
+    max-width: 1490px;
+  }
+  .product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    height: 520px; 
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .product-image {
+    position: absolute;
+  }
+  
+  .cart-icon {
+    color: #64b496;
+    position: absolute;
+    top: -22px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cart-icon:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+  
+  .product-category {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 10px 0;
+  }
+  
+  .product-rating {
+    color: #ffcc00;
+    font-size: 16px;
+  }
+  
+  .product-title {
+    font-family: "poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .product-title:hover{
+    color: #64b496;
+  transition: 0.3s ease-in-out;
+
+  }
+  
+  .product-price {
+    color: #64b496;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .add-to-cart-btn {
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .product-image-container:hover .wishlist-icon,
+  .product-image-container:hover .eye-icon{
+    transform: translate(0px);
+    transition: all 0.3s;
+  }
+  
+  .wishlist-icon{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    transform: translate(100px);
+  }
+  
+  .eye-icon{
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    transform: translate(100px);
+  }

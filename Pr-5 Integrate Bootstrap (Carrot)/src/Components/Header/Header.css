@@ -1,0 +1,81 @@
+/* Import Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom styles */
+.header-wrapper {
+  max-width: 1492px;
+  margin: 0 auto;
+}
+
+.header-wrapper .header-top {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e9e9e9;
+  align-items: center;
+}
+
+.header-wrapper .header-search {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #64b496;
+  border-radius: 5px;
+}
+
+.search-group input {
+  flex-grow: 1;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+
+.search-category-toggle {
+  border-left: 1px solid #ccc;
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.search-btn {
+  border-left: 1px solid #ccc;
+  background-color: #64b496;
+  color: white;
+  padding: 10px 15px;
+}
+
+.search-btn:hover {
+  background-color: #5aa485;
+} 
+
+/* Right section styling */
+.header-user-options {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+
+.header-user-options .user-option-item {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header-user-options a span {
+  margin-left: 5px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.header-user-options a span:hover {
+  color: #64b496;
+  transition: 0.3s ease-in-out;
+}
