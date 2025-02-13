@@ -9,7 +9,6 @@ function App() {
   const [employees, setEmployees] = useState([]);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
 
-  // Load employees from localStorage when the app starts
   useEffect(() => {
     const savedEmployees = JSON.parse(localStorage.getItem("employees")) || [];
     setEmployees(savedEmployees);

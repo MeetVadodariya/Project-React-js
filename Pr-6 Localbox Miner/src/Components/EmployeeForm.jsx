@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button, Card, Col, Container, Form } from "react-bootstrap";
-import "../styles/styles.css"; // Import global styles
+import "../styles/styles.css"; 
 
 const EmployeeForm = ({ addEmployee, editEmployee, selectedEmployee }) => {
   const initialEmployee = {
@@ -15,7 +15,7 @@ const EmployeeForm = ({ addEmployee, editEmployee, selectedEmployee }) => {
 
   const [inputForm, setInputForm] = useState(initialEmployee);
   const [isEdit, setIsEdit] = useState(false);
-  const [errors, setErrors] = useState({}); // State for validation errors
+  const [errors, setErrors] = useState({}); 
 
   useEffect(() => {
     if (selectedEmployee) {
@@ -28,7 +28,6 @@ const EmployeeForm = ({ addEmployee, editEmployee, selectedEmployee }) => {
     const { name, value } = e.target;
     setInputForm({ ...inputForm, [name]: value });
 
-    // Live validation
     if (name === "email") validateEmail(value);
     if (name === "phone") validatePhone(value);
   };
@@ -38,7 +37,6 @@ const EmployeeForm = ({ addEmployee, editEmployee, selectedEmployee }) => {
     setInputForm({ ...inputForm, image: file });
   };
 
-  // Email validation
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setErrors((prev) => ({
@@ -47,7 +45,6 @@ const EmployeeForm = ({ addEmployee, editEmployee, selectedEmployee }) => {
     }));
   };
 
-  // Phone number validation (10 digits only)
   const validatePhone = (phone) => {
     const phoneRegex = /^[0-9]{10}$/;
     setErrors((prev) => ({
@@ -59,7 +56,7 @@ const EmployeeForm = ({ addEmployee, editEmployee, selectedEmployee }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Final validation before submission
+
     validateEmail(inputForm.email);
     validatePhone(inputForm.phone);
 
