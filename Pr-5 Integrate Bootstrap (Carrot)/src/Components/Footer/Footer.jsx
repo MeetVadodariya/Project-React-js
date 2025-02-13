@@ -7,7 +7,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer-wrapper"> {/* New wrapper class */}
+    <footer className="footer-wrapper">
       <div className="footer-container">
         <Row className="footer-content">
           {/* Company Info */}

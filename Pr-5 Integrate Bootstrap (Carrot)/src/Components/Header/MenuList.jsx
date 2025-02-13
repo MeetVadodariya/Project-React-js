@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Nav, Container, Dropdown, Row, Col, ListGroup } from "react-bootstrap";
-import { RiMenu2Line, RiPhoneLine } from "react-icons/ri";
+import { RiArrowDropDownLine, RiMenu2Line, RiPhoneLine } from "react-icons/ri";
 import "./MenuList.css";
 
 const MainMenu = () => {
   const [selectedCategory, setSelectedCategory] = useState("Dairy & Bakery");
   const [openDropdown, setOpenDropdown] = useState(null);
-
-  // Define categories and subcategories
+  
   const categories = [
     {
       name: "Dairy & Bakery",
@@ -131,9 +130,9 @@ const MainMenu = () => {
             onMouseLeave={() => setOpenDropdown(null)}
             show={openDropdown === "categoryMenu"}
           >
-            <Dropdown.Toggle variant="link" className="nav-link">
-              Category
-            </Dropdown.Toggle>
+            <Dropdown variant="link" className="nav-link">
+              Category<RiArrowDropDownLine  className="fs-5"/>
+            </Dropdown>
             <Dropdown.Menu>
               <Dropdown.Item href="#">Shop Left sidebar</Dropdown.Item>
               <Dropdown.Item href="#">Shop Right sidebar</Dropdown.Item>
@@ -146,9 +145,9 @@ const MainMenu = () => {
             onMouseLeave={() => setOpenDropdown(null)}
             show={openDropdown === "productsMenu"}
           >
-            <Dropdown.Toggle variant="link" className="nav-link">
-              Products
-            </Dropdown.Toggle>
+            <Dropdown variant="link" className="nav-link">
+              Products<RiArrowDropDownLine  className="fs-5"/>
+            </Dropdown>
             <Dropdown.Menu>
               <Dropdown.Item href="#">Product Left sidebar</Dropdown.Item>
               <Dropdown.Item href="#">Product Right sidebar</Dropdown.Item>
@@ -161,9 +160,9 @@ const MainMenu = () => {
             onMouseLeave={() => setOpenDropdown(null)}
             show={openDropdown === "pagesMenu"}
           >
-            <Dropdown.Toggle variant="link" className="nav-link">
-              Pages
-            </Dropdown.Toggle>
+            <Dropdown variant="link" className="nav-link">
+              Pages<RiArrowDropDownLine  className="fs-5"/>
+            </Dropdown>
             <Dropdown.Menu>
               <Dropdown.Item href="#">About Us</Dropdown.Item>
               <Dropdown.Item href="#">Contact Us</Dropdown.Item>
@@ -183,9 +182,9 @@ const MainMenu = () => {
             onMouseLeave={() => setOpenDropdown(null)}
             show={openDropdown === "blogMenu"}
           >
-            <Dropdown.Toggle variant="link" className="nav-link">
-              Blog
-            </Dropdown.Toggle>
+            <Dropdown variant="link" className="nav-link">
+              Blog<RiArrowDropDownLine  className="fs-5"/>
+            </Dropdown>
             <Dropdown.Menu>
               <Dropdown.Item href="#">Left Sidebar</Dropdown.Item>
               <Dropdown.Item href="#">Right Sidebar</Dropdown.Item>
@@ -201,9 +200,9 @@ const MainMenu = () => {
             onMouseLeave={() => setOpenDropdown(null)}
             show={openDropdown === "elementsMenu"}
           >
-            <Dropdown.Toggle variant="link" className="nav-link">
-              Elements
-            </Dropdown.Toggle>
+            <Dropdown variant="link" className="nav-link">
+              Elements<RiArrowDropDownLine  className="fs-5"/>
+            </Dropdown>
             <Dropdown.Menu>
               <Dropdown.Item href="#">Products</Dropdown.Item>
               <Dropdown.Item href="#">Typography</Dropdown.Item>
