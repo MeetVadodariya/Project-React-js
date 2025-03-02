@@ -1,0 +1,98 @@
+/* Container Styling */
+.view-books-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title Styling */
+  .table-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  /* Custom Table Styling */
+  .custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+  
+  .custom-table th {
+    background: #34495e;
+    color: white;
+    text-align: left;
+    padding: 14px;
+    border-radius: 6px 6px 0 0;
+    font-size: 16px;
+  }
+  
+  .custom-table td {
+    padding: 12px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .custom-table tbody tr {
+    transition: all 0.3s ease;
+  }
+  
+  .custom-table tbody tr:hover {
+    background: #ecf0f1;
+  }
+  
+  /* Book Image */
+  .book-image {
+    width: 65px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Pagination Styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  
+  .pagination-button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination-button:hover {
+    background: #1c6692;
+  }
+  
+  .pagination-button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .page-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0 10px;
+  }
+  
