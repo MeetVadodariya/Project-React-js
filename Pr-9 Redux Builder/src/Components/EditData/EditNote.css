@@ -1,0 +1,85 @@
+.edit-note-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.edit-note-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #202c45;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-label {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+.form-input {
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.form-input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.4);
+  outline: none;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.form-btn {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 48%;
+}
+.update-btn {
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.update-btn:hover {
+  background-color: #1565c0;
+}
+.cancel-btn {
+  background-color: #757575;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.cancel-btn:hover {
+  background-color: #616161;
+}
+
+@media (max-width: 600px) {
+  .edit-note-container {
+    padding: 15px;
+  }
+  .form-btn {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+  .form-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

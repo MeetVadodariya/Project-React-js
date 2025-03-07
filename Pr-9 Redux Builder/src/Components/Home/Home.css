@@ -1,0 +1,130 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.home-wrapper {
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.home-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #202c45;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+
+.note-item {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.note-item:hover {
+  transform: translateY(-8px);
+}
+
+.note-item-body {
+  padding: 20px;
+}
+
+.note-item-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #202c45;
+  margin-bottom: 10px;
+}
+
+.note-item-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 120px;
+}
+
+.note-item-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.edit-note-btn,
+.delete-note-btn {
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  color: #202c45;
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-note-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-note-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-note-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-note-btn:hover {
+  background-color: #e53935;
+}
+
+.add-note-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #0d47a1;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-note-btn:hover {
+  background-color: #1565c0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.add-note-btn i,
+.edit-note-btn i,
+.delete-note-btn i {
+  margin: 0;
+}

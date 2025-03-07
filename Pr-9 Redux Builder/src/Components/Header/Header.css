@@ -1,0 +1,23 @@
+.custom-header {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #202c45; 
+  display: flex;
+  align-items: center;
+}
+.custom-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.custom-header .navbar-toggler {
+  border-color: #202c45;
+}
+.custom-header .navbar-toggler-icon {
+  background-color: #202c45;
+}
