@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "84362",
+      "product_name": "Kilos",
+      "product_price": "565",
+      "product_description": "High-quality rice, perfect for daily meals and gatherings.",
+      "product_image": "https://png.pngtree.com/thumb_back/fh260/background/20230721/pngtree-assorted-grocery-items-arranged-in-a-white-3d-rendering-of-a-image_3722980.jpg",
+      "category": "Grocery"
+    },
+    {
+      "id": "57843",
+      "product_name": "Fashion",
+      "product_price": "323",
+      "product_description": "Trendy and stylish clothing for men, women, and children.",
+      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxNfRhL7G3oQBRNGGFVphVDdutYpOssyGd8Q&s",
+      "category": "Cloths"
+    },
+    {
+      "id": "77987",
+      "product_name": "Beauty",
+      "product_price": "345",
+      "product_description": "A beauty kit that enhances your natural glow and gives you flawless skin.",
+      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Lui9y1iZUT4P_j7w8NPHnvTJQ-3RIpYzWw&s",
+      "category": "Cosmetics"
+    },
+    {
+      "id": "46334",
+      "product_name": "Electronics",
+      "product_price": "242",
+      "product_description": "This smartphone offers advanced features and sleek design.",
+      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsKhzGh_Hrn3tx9NXinTAIQdXmnTZqDaL_mA&s",
+      "category": "Mobile"
+    },
+    {
+      "id": "12733",
+      "product_name": "Home and furniture",
+      "product_price": "640",
+      "product_description": "Elegant furniture for your home, combining style and comfort.",
+      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDLn6ISVxM8p_OYDAnos_cIZCNzgpa0XnqXw&s",
+      "category": "Home & Furniture"
+    }
+  ]
+}

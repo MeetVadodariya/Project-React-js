@@ -1,0 +1,578 @@
+/* ===================== Global Styles ===================== */
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #f1f3f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+  background: rgb(250, 238, 238);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================== Header Styles ===================== */
+
+.header {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dbe3f3;
+  padding: 10px 20px;
+  color: #073af1;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.explore {
+  font-size: 12px;
+  color: #ffc107;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 5px;
+  width: 40%;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.search-icon {
+  color: #2874f0;
+  margin-right: 5px;
+}
+
+.header-options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.more {
+  font-size: 20px;
+}
+.add-button {
+  margin-left: 300px;
+  width: 200px;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  background-color: #2874f0; /* Blue background */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.add-button:hover {
+  background-color: #1c52b8; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.add-button:focus {
+  outline: none; /* Remove default outline on focus */
+}
+
+.add-button:active {
+  background-color: #1a4db3; /* Even darker blue on click */
+  transform: translateY(1px); /* Slight push effect on click */
+}
+
+
+/* ===================== Categories Styles ===================== */
+
+.categories-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  max-width: 1315px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.category-list{
+  display: contents;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  width: 18%; /* Adjust width for responsiveness */
+}
+
+.category-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.category-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 5px;
+}
+
+.dropdown-icon {
+  font-size: 12px;
+  color: #555;
+  margin-left: 5px;
+}
+
+
+/* ===================== Product and Sorting Styles ===================== */
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #9b5c5c;
+  margin-bottom: 40px;
+  border-left: 6px solid #ff9f00;
+  padding-left: 15px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sort-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-container select {
+  width: 300px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #ff9f00;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sort-container select:hover {
+  border-color: #fb641b;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background: white;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 200px;
+  width: 330px;
+  object-fit: contain;
+  padding: 10px;
+  margin-left: 35px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #212121;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.card .btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button.edit {
+  background: #2874f0;
+  color: white;
+}
+
+.card button.edit:hover {
+  background: #1c52b8;
+}
+
+.card button.delete {
+  background: #ff5722;
+  color: white;
+}
+
+.card button.delete:hover {
+  background: #e64a19;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  border: none;
+  padding: 10px 15px;
+  margin: 0 8px;
+  border-radius: 6px;
+  background: #2874f0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination button:hover {
+  background: #1c52b8;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.text-muted {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #757575;
+}
+
+/* ===================== Add Product and Edit Product Styles ===================== */
+
+/* Add Product Button */
+.add-button {
+  margin-left: 160px;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #ff9f00;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.add-button:hover {
+  background-color: #fb641b;
+}
+
+/* Add Product Container */
+.add-container {
+  background-color: #e8f4e8;
+  font-family: 'Lucida Sans', sans-serif;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-data {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4caf50;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Group */
+.form-group-field {
+  margin-left: 380px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Input Fields */
+.form-group-field input,
+.form-group-field select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ff9f00;
+  width: 300px;
+  margin-top: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group-field input:focus,
+.form-group-field select:focus {
+  border-color: #fb641b;
+  outline: none;
+}
+
+.form-group-field label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #212121;
+}
+
+/* Edit Product Button */
+.edit-button {
+  margin-left: 160px;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #2874f0;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+  background-color: #1c52b8;
+}
+
+/* Edit Product Container */
+.edit-container {
+  background-color: #e8f4e8;
+  font-family: 'Lucida Sans', sans-serif;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-data {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2196f3;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Edit Form Group */
+.edit-form-group-field {
+  margin-left: 150px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Input Fields */
+.edit-form-group-field input,
+.edit-form-group-field select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #2196f3;
+  width: 300px;
+  margin-top: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.edit-form-group-field input:focus,
+.edit-form-group-field select:focus {
+  border-color: #1c52b8;
+  outline: none;
+}
+
+.edit-form-group-field label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #212121;
+}
+
+/* ===================== Footer Styles ===================== */
+
+.footer {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 30px 0;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  color: #878787;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #3a3a3a;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.footer-bottom .links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom .links a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-bottom .links a i {
+  margin-right: 5px;
+}
+
+.footer-bottom .copyright {
+  font-size: 12px;
+  color: #878787;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-payment img {
+  height: 24px;
+  margin-left: 8px;
+}
