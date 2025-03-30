@@ -24,27 +24,12 @@ export const getAllProductsAsync = () => {
         const querySnapshot = await getDocs(collection(db, "products"));
         let result = [];
         querySnapshot.forEach((doc) => {
-        // doc.data() is never undefined for query doc snapshots
          console.log(doc.id, " => ", doc.data());
          result.push({...doc.data(),id : doc.id})
           });
           dispatch(getAllProducts(result))
     };
 };
-
-
-// export const AddProductAsync = (data) => {
-//     return async(dispatch) => {
-//     try {
-//         const docRef = await addDoc(collection(db, "products"), data);
-//         dispatch(getAllProductsAsync())
-//         console.log("Document written with ID: ", docRef.id);
-//       } catch (e) {
-//         console.error("Error adding document: ", e);
-//       }
-//     };
-      
-// };
 
 export const AddProductAsync = (data) => {
     return async (dispatch) => {
@@ -83,18 +68,6 @@ export const getProductAsync = (id) => {
         }
     };
 };
-
-
-// export const updateProductAsync = (id, data) => {
-//     return async(dispatch) => {
-//         try {
-//             let record = await updateDoc(doc(db, "products", id), data);
-//             dispatch(updateProduct());
-//         } catch (error) {
-//             console.error("Error : ", error);
-//         }
-//     };
-// };
 
 export const updateProductAsync = (id, data) => {
     return async (dispatch) => {

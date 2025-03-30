@@ -1,19 +1,34 @@
-
 import { useState } from "react";
 import { Navbar, Button, Card, Row, Col, Container } from "react-bootstrap";
-import { FaSearch, FaShoppingCart, FaUserCircle, FaStore } from "react-icons/fa";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { FaSearch, FaShoppingCart,  FaStore } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { logOutAsync } from "../Servise/action/auth.action";
 
 const Header = () => {
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [showResults, setShowResults] = useState(false); 
     const products = useSelector(state => state.productReducer.products);
+    const {user} = useSelector((state) => state.userReducer)
+    const { cartItems } = useSelector((state) => state.cartReducer);
+    const cartCount = cartItems.length;
 
     const handleSearch = (event) => {
         setSearchQuery(event.target.value);
     };
+
+    const handleLogout = () => {
+        dispatch(logOutAsync())
+        navigate("/signin")
+    }
+
+    const handleLogin = () => {
+        navigate("/signin")
+    }
 
     const handleSearchSubmit = (event) => {
         event.preventDefault();
@@ -46,28 +61,24 @@ const Header = () => {
                     />
                     <Button type="submit" className="search-btn ms-2">Search</Button>
                 </form>
-
                 <nav>
                     <Link to="/add">Add Product</Link>
                 </nav>
-
                 <div className="header-options">
                     <div className="option">
-                        <FaUserCircle />
-                        <span>Login ▼</span>
+                        {user ? <Button onClick={handleLogout}>LogOut</Button> : <Button onClick={handleLogin} >Login ▼</Button>}
                     </div>
-                    <div className="option">
-                        <FaShoppingCart />
-                        <span>Cart</span>
+                    <div className="option cart-btn">
+                        <Link to="/cart" className="cart-link">
+                            <FaShoppingCart size={24} />
+                            {cartCount > 0 && (
+                                <span className="cart-count">{cartCount}</span>
+                            )}
+                        </Link>
+                        <span className="cart-text">Cart</span>
                     </div>
-                    <div className="option">
-                        <FaStore />
-                        <span>Become a Seller</span>
-                    </div>
-                    <div className="option more">⋮</div>
                 </div>
             </div>
-
             {showResults && (
                 <Container className="mt-3">
                     <h3>Search Results</h3>

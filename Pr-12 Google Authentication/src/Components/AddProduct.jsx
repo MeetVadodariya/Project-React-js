@@ -61,9 +61,6 @@ const AddProduct = () => {
             dispatch(AddProductAsync({ ...inputData}));
         }
     };
-
-
-
     useEffect(() => {
         if (isCreated) {
           dispatch({ type: "RESET_CREATE" }); // Reset after navigation
@@ -71,7 +68,6 @@ const AddProduct = () => {
         }
       }, [isCreated, navigate, dispatch]);
       
-    
     return (
         <Container className="mt-3 add-container">
             <h2 className="mb-4 add-data">Add Product</h2>
@@ -143,12 +139,14 @@ const AddProduct = () => {
                         >
                             <option value="">Select One</option>
                             <option value="Cloths">Cloths</option>
+                            <option value=" Stationery"> Stationery</option>
                             <option value="Electronics">Electronics</option>
                             <option value="Home & Furniture">Home & Furniture</option>
                             <option value="Mobile">Mobile</option>
+                            <option value=" wehicals"> wehicals</option>
                             <option value="Cosmetics">Cosmetics</option>
-                            <option value="Footwear">Footwear</option>
                             <option value="Toys">Toys</option>
+                            <option value="Footwear">Footwear</option>
                             <option value="Grocery">Grocery</option>
                         </Form.Select>
                         {errors.category && <small className="text-danger">{errors.category}</small>}

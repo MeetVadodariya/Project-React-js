@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router";
@@ -31,13 +29,6 @@ const EditProduct = () => {
         dispatch(updateProductAsync(id, inputData));
     };
 
-    
-    // useEffect(() => {
-    //     console.log("isUpdated Changed:", isUpdated);  
-    //     if (isUpdated) {
-    //         navigate("/");
-    //     }
-    // }, [isUpdated,navigate]);
 
     useEffect(() => {
         console.log("isUpdated Changed:", isUpdated);
@@ -117,11 +108,15 @@ const EditProduct = () => {
 
                             <option value="Cosmetics" selected= {inputData.category == "Cosmetics"}>Cosmetics</option>
 
+                            <option value="Grocery" selected= {inputData.category == "Grocery"}>Grocery</option>
+
                             <option value="Footwear" selected= {inputData.category == "Footwear"}>Footwear</option>
+
+                            <option value=" wehicals" selected= {inputData.category == "wehicals"}> wehicals</option>
 
                             <option value="Toys" selected= {inputData.category == "Toys"}>Toys</option>
 
-                            <option value="Grocery" selected= {inputData.category == "Grocery"}>Grocery</option>
+                            <option value=" Stationery" selected= {inputData.category == "Stationery"}> Stationery</option>
                         </Form.Select>
                     </Col>
                 </Form.Group>
@@ -133,3 +128,4 @@ const EditProduct = () => {
 };
 
 export default EditProduct;
+

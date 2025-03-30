@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { Button, Container, Spinner, Card, Row, Col, Carousel, Form } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,6 +11,7 @@ const Home = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const { products, isLoading } = useSelector(state => state.productReducer);
+
     const [sortOption, setSortOption] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const productsPerPage = 9;
