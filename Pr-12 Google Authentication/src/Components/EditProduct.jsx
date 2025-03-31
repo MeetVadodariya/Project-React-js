@@ -28,7 +28,9 @@ const EditProduct = () => {
         console.log("Submitting Data:", inputData); 
         dispatch(updateProductAsync(id, inputData));
     };
-
+    const handleChange = () => {
+        navigate("/");
+      };
 
     useEffect(() => {
         console.log("isUpdated Changed:", isUpdated);
@@ -120,8 +122,13 @@ const EditProduct = () => {
                         </Form.Select>
                     </Col>
                 </Form.Group>
+                <div className="edit-btnn">
 
+                <Button className="" onClick={handleChange}>
+                Go Back
+              </Button>
                 <Button className="edit-button" variant="success" type="submit">Edit Product</Button>
+                </div>
             </Form>
         </Container>
     );

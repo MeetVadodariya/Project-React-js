@@ -83,7 +83,7 @@ const Login = () => {
           </Button>
         </Form>
         <br />
-        <Button variant="danger" onClick={handleGoogleLogin} className="btn-google">
+        <Button variant="success" onClick={handleGoogleLogin} className="btn-google">
           <FaGoogle className="google-icon" />   Login with Google
         </Button>
 
